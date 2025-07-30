@@ -31,7 +31,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-800 mb-4">About Me</h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-            Passionate developer with 5+ years of experience building web applications 
+            Passionate developer with 3+ years of experience building web applications
             that users love. I combine technical expertise with design thinking to create 
             exceptional digital experiences.
           </p>
@@ -43,14 +43,12 @@ const About = () => {
             <div className="space-y-4 text-slate-600 leading-relaxed">
               <p>
                 I started my journey in web development during college, where I discovered 
-                my passion for creating digital solutions. Since then, I've worked with 
-                startups and established companies, building everything from simple landing 
+                my passion for creating digital solutions. Since then, I've built everything from simple landing
                 pages to complex enterprise applications.
               </p>
               <p>
                 I believe in continuous learning and staying up-to-date with the latest 
-                technologies. When I'm not coding, you can find me contributing to open 
-                source projects, mentoring junior developers, or exploring new frameworks.
+                technologies. When I'm not coding, you can find me mentoring other developers, or exploring new frameworks.
               </p>
               <p>
                 My goal is to join a dynamic team where I can contribute my skills while 

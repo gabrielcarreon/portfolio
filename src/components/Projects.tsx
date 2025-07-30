@@ -4,29 +4,34 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack online store with payment integration, inventory management, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
+      title: "Ed-Tech",
+      description: "An end-to-end AI-powered platform for dynamic quiz generation and automated essay evaluation, seamlessly integrated with the OpenAI API. Built using React for the frontend, Django for the backend, and PostgreSQL for robust data management.",
       image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-      liveLink: "#",
+      technologies: ["React", "Django", "PostgreSQL", "OpenAI", "Mantine UI", "Tailwind CSS"],
       githubLink: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, file sharing, and team communication features.",
-      image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Firebase", "Material-UI", "Socket.io"],
-      liveLink: "#",
-      githubLink: "#",
-      featured: true
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather application with location-based forecasts, interactive maps, and detailed analytics.",
+      title: "Adamson University",
+      description: "A microservices-based Learning Management System (LMS) integrated with the Microsoft Graph API for seamless event tracking, notifications, and single sign on (SSO).",
       image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Vue.js", "OpenWeather API", "Chart.js", "SCSS"],
+      technologies: ["React", "Laravel", "Shadcn", "TailwindCSS", "MySQL", "Microsoft Graph", "Zustand", "Redis"],
       liveLink: "#",
+      featured: true
+    },
+    {
+      title: "Amlic",
+      description: "A combined Inventory and HRIS with RBAC (Role-based Access Control) platform designed to efficiently monitor daily stock inflow and outflow, while managing employee data and activity in real-time.",
+      image: "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["React", "Laravel", "Shadcn", "TailwindCSS", "MySQL"],
+      liveLink: "#",
+      featured: false
+    },
+    {
+      title: "CPU Benchmark Scraper",
+      description: "A CLI tool built with Puppeteer for scraping and extracting benchmark data from cpubenchmark site. It automates headless browsing to gather structured performance metrics for comparison and analysis.",
+      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Puppeteer", "Javascript"],
       githubLink: "#",
       featured: false
     },
@@ -36,7 +41,6 @@ const Projects = () => {
       image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
       liveLink: "#",
-      githubLink: "#",
       featured: false
     }
   ];
@@ -73,18 +77,23 @@ const Projects = () => {
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-2xl font-bold text-slate-800">{project.title}</h3>
                   <div className="flex space-x-3">
-                    <a
-                      href={project.liveLink}
-                      className="p-2 bg-blue-100 text-blue-600 rounded-lg hover:bg-blue-200 transition-colors duration-200"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubLink}
-                      className="p-2 bg-slate-100 text-slate-600 rounded-lg hover:bg-slate-200 transition-colors duration-200"
-                    >
-                      <Github size={20} />
-                    </a>
+                    {Boolean(project?.liveLink) && (
+                      <a
+                        href={project.liveLink}
+                        className="p-2 bg-blue-100 text-blue-600 rounded-lg hover:bg-blue-200 transition-colors duration-200"
+                      >
+                        <ExternalLink size={20}/>
+                      </a>
+                    )}
+                    {Boolean(project?.githubLink) && (
+                      <a
+                        href={project.githubLink}
+                        className="p-2 bg-slate-100 text-slate-600 rounded-lg hover:bg-slate-200 transition-colors duration-200"
+                      >
+                        <Github size={20}/>
+                      </a>
+                    )}
+
                   </div>
                 </div>
 

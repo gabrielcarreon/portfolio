@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Alex Chen</h3>
+            <h3 className="text-2xl font-bold mb-4">Gabriel Carreon</h3>
             <p className="text-slate-400 leading-relaxed">
               Full Stack Developer passionate about creating exceptional digital experiences. 
               Always learning, always building.
@@ -52,19 +52,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a
-                href="#"
+                target="_blank"
+                href="https://github.com/gabrielcarreon"
                 className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-600 transition-all duration-200"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                target="_blank"
+                href="https://www.linkedin.com/in/gabrielolivercarreon/"
                 className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-600 transition-all duration-200"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                target="_blank"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=gabriel.oliver.carreon@gmail.com"
                 className="w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-600 transition-all duration-200"
               >
                 <Mail size={20} />
@@ -75,7 +78,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm flex items-center">
-            Made with <Heart size={16} className="mx-1 text-red-500" /> by Alex Chen
+            Made with <Heart size={16} className="mx-1 text-red-500" /> by Gabriel Carreon
           </p>
           <button
             onClick={scrollToTop}

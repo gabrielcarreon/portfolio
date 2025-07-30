@@ -27,8 +27,8 @@ const Header = () => {
     }`}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold text-slate-800">
-            Portfolio
+          <div className={`text-2xl font-bold ${isScrolled ? "text-slate-800" : "text-white"}`}>
+            Gabriel Carreon
           </div>
 
           {/* Desktop Navigation */}
@@ -37,7 +37,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-slate-600 hover:text-blue-600 transition-colors duration-200 capitalize font-medium"
+                className={`hover:text-blue-600 transition-colors duration-200 capitalize font-medium ${isScrolled ? "text-slate-600" : "text-white"}`}
               >
                 {item}
               </button>

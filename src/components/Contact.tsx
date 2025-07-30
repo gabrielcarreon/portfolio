@@ -46,16 +46,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm">Email</p>
-                    <p className="text-white font-medium">alex.chen@email.com</p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center">
-                    <Phone size={20} />
-                  </div>
-                  <div>
-                    <p className="text-slate-400 text-sm">Phone</p>
-                    <p className="text-white font-medium">+1 (555) 123-4567</p>
+                    <p className="text-white font-medium">gabriel.oliver.carreon@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -64,7 +55,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-slate-400 text-sm">Location</p>
-                    <p className="text-white font-medium">San Francisco, CA</p>
+                    <p className="text-white font-medium">Manila, PH</p>
                   </div>
                 </div>
               </div>
@@ -74,7 +65,7 @@ const Contact = () => {
               <h4 className="text-lg font-semibold mb-4">Response Time</h4>
               <p className="text-slate-400 leading-relaxed">
                 I typically respond to messages within 24 hours. For urgent matters, 
-                feel free to reach out via phone or LinkedIn.
+                feel free to reach out via LinkedIn.
               </p>
             </div>
           </div>

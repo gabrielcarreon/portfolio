@@ -6,67 +6,61 @@ const Skills = () => {
     {
       title: "Frontend Development",
       skills: [
-        "React & Next.js",
+        "ReactJS",
+        "jQuery",
+        "Zustand",
         "TypeScript & JavaScript",
-        "Tailwind CSS & SCSS",
-        "Vue.js & Nuxt.js",
-        "HTML5 & CSS3",
-        "Responsive Design"
+        "Tailwind CSS",
       ]
     },
     {
       title: "Backend Development",
       skills: [
-        "Node.js & Express",
         "Python & Django",
-        "REST APIs & GraphQL",
-        "PostgreSQL & MySQL",
-        "MongoDB & Redis",
-        "Microservices Architecture"
+        "PHP & Laravel",
+        "REST API",
+        {
+          name: "Database",
+          subSkills: ["MSSQL", "PostgreSQL", "MYSQL", "MariaDB", "Redis", "Firestore"]
+        },
+        "RBAC (Role-based Access Control)",
+        "Microservices Architecture",
       ]
     },
     {
       title: "DevOps & Cloud",
       skills: [
+        "BASH & Powershell",
         "Git & GitHub",
-        "Docker & Kubernetes",
+        "Docker",
         {
           name: "AWS",
-          subSkills: ["EC2", "S3", "Lambda", "RDS", "CloudFormation", "API Gateway"]
+          subSkills: ["EC2", "S3", "Lightsail", "Route 53"]
         },
-        "Google Cloud Platform",
-        "CI/CD Pipelines",
-        "Jest & Testing",
-        "Webpack & Vite"
+        "Vite"
       ]
     }
   ];
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
+      name: "Google Professional Cybersecurity Certificate",
+      issuer: "Google",
       date: "2024",
       status: "Active"
     },
     {
-      name: "Google Cloud Professional Developer",
-      issuer: "Google Cloud",
-      date: "2023",
+      name: "Database Administration Fundamentals",
+      issuer: "Microsoft",
+      date: "2020",
       status: "Active"
     },
     {
-      name: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2023",
-      status: "Active"
-    },
-    {
-      name: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
+      name: "Java Level 1",
+      issuer: "CCA",
       date: "2022",
       status: "Active"
-    }
+    },
   ];
 
   const renderSkill = (skill: any, index: number) => {
